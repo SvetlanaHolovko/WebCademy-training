@@ -1,0 +1,16 @@
+@import "./bloks/base.css";
+@import "./bloks/buttons.css";
+@import "./bloks/menu-icon.css";
+@import "./bloks/nav.css";
+@import "./bloks/header.css";
+@import "./bloks/section-header.css";
+@import "./bloks/product.css";
+@import "./bloks/info-section.css";
+@import "./bloks/posts.css";
+@import "./bloks/subscribe-form.css";
+@import "./bloks/footer.css";
+
+/*
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Playfair Display', serif;
+*/
