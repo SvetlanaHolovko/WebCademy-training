@@ -45,7 +45,7 @@ img {
 
 .sidebar {
 	min-width: 200px;
-	width: 270px;
+	width: 260px;
 }
 
 @media (max-width: 829px) {
@@ -57,11 +57,16 @@ img {
         bottom: 0;
 		left: 0;
         background-color: #fff;
-        padding: 20px 15px;
+        padding: 20px 10px;
         box-shadow: 0 0 20px 4px rgb(0 0 0 / 37%);
         overflow-y: auto;
         transform: translateX(-150%);
+        transition: transform 0.5s ease-in;
 	}
+
+    .sidebar--mobile-active {
+        transform: translateX(0%);
+    }
 }
 
 .main + .sidebar {
@@ -83,6 +88,10 @@ img {
 
 .cards-holder > .card-link {  
 	margin-bottom: 32px;
+}
+
+.card-link--hidden{
+    display: none !important;
 }
 
 /* Card */
@@ -228,6 +237,13 @@ a.card-link:hover {
 	line-height: 1.16;
 	color: #000;
 	margin-bottom: 20px;
+    cursor: pointer;
+}
+
+@media (max-width: 829px) {
+    .widget__title {
+        font-size: 16px;
+    }
 }
 
 .widget__title:after {
@@ -241,6 +257,14 @@ a.card-link:hover {
     background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
+}
+
+.widget__title--active:after {
+    transform: rotate(180deg);
+}
+
+.widget__body--hidden {
+    display: none;
 }
 
 /* Location buttons group */
@@ -359,6 +383,10 @@ a.card-link:hover {
 .checkbox {
 	display: block;
 	cursor: pointer;
+}
+
+.checkbox--hidden {
+    display: none;
 }
 
 .checkbox  + .checkbox {
@@ -542,9 +570,10 @@ a.card-link:hover {
 
 /* Button Toggle Sidebar */
 .sidebar__toggle {
-    position: absolute;
-    right: 15px;
-    top: 15px;
+    display: none;
+    position: fixed;
+    right: 2px;
+    top: 9px;
     width: 40px;
     height: 40px;
     background-color: #ffcf26;;
@@ -553,17 +582,19 @@ a.card-link:hover {
     cursor: pointer;
 }
 
-/* .menu-icon-wrapper {
-    width: 30px;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    z-index: 99;
-} */
+@media (max-width: 829px) {
+    .sidebar__toggle {
+        display: block;
+    }
+}
 
-@media (min-width: 992px) {
+.menu-icon-wrapper {
+    display: flex;
+    align-items: center;
+    z-index: 99;
+}
+
+@media (min-width: 829px) {
 	.menu-icon-wrapper {
 		display: none;
 	}
