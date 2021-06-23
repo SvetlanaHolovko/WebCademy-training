@@ -1,5 +1,10 @@
-document.querySelector('.menu-icon-wrapper').onclick = function(){
-    document.querySelector('.menu-icon').classList.toggle('menu-icon-active');
-    // document.querySelector('.nav__list-holder').style.display = "block";
-    document.querySelector('.nav__list-holder').classList.toggle('nav__list-holder--visible');
+// Фильтр на мобильных устройствах
+const sidebarToggle = document.querySelector('.menu-icon-wrapper');
+const menuIcon = document.querySelector('.menu-icon');
+const sidebar = document.querySelector('.nav__list-holder');
+
+// Клик по кнопке для скрытия/показа фильтра и изменения иконки
+sidebarToggle.onclick = function () {
+    menuIcon.classList.toggle('menu-icon-active');
+    sidebar.classList.toggle('nav__list-holder--visible');
 };
