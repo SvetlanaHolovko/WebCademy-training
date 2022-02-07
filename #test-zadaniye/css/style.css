@@ -574,7 +574,7 @@ a.card-link:hover {
     position: fixed;
     right: 2px;
     top: 9px;
-    width: 40px;
+    width: 30px;
     height: 40px;
     background-color: #ffcf26;;
     border: none;
@@ -603,7 +603,7 @@ a.card-link:hover {
 .menu-icon {
     position: relative;
     margin-left: 5px;
-    width: 30px;
+	 flex: 0 0 30px;
     height: 3px;
     background-color: rgb(0, 0, 0);
 }
@@ -613,7 +613,7 @@ a.card-link:hover {
     position: absolute;
     left: 0;
     top: -10px;
-    width: 30px;
+    flex: 0 0 30px;
     height: 3px;
     background-color: rgb(0, 0, 0);
     transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
@@ -624,7 +624,7 @@ a.card-link:hover {
     position: absolute;
     left: 0;
     top: 10px;
-    width: 30px;
+    flex: 0 0 30px;
     height: 3px;
     background-color: rgb(0, 0, 0);
     transition: transform 0.2s ease-in, top 0.2s linear 0.2s;

@@ -39,7 +39,7 @@
 
 @media (min-width: 500px) {
     .subscribe-form__input {
-        width: 229px;
+        flex: 0 0 229px;
     }
 }
 
